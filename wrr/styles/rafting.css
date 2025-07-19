@@ -1,0 +1,130 @@
+/* ===========================
+   Rafting Site CSS - rafting.css
+   =========================== */
+
+/* 1. Root Variables */
+:root {
+  --primary-color: #1C4919;
+  --secondary-color: #369FA2;
+  --accent1-color: #967D3E;
+  --accent2-color: #CBB3B3;
+
+  --heading-font: 'Roboto Slab', serif;
+  --body-font: 'Open Sans', sans-serif;
+
+  --text-color: #222;
+  --background-color: #fff;
+}
+
+/* 2. CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 3. Body Styling */
+body {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* 4. Layout Centering */
+header, main, footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* 5. Headings */
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* 6. Nav, Paragraph, Section, Article Spacing */
+nav, p, section, article {
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
+
+/* 7. Social Media Image Links - Remove Underlines */
+footer .socialmedia a {
+  text-decoration: none;
+}
+
+/* 8. Hero Section */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+/* 9. Hero h1 Overlay */
+.hero h1 {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  background-color: rgba(54, 159, 162, 0.8);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+/* 10. Hero Article Overlay */
+.hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 1rem;
+  max-width: 400px;
+  font-family: var(--body-font);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 2;
+}
+
+/* 11. Image in Hero Article */
+.hero article img {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  width: 120px;
+  border-radius: 6px;
+}
+
+/* 12. Navigation Links */
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+nav a:hover {
+  color: var(--accent1-color);
+}
+
+/* 13. Footer Styling */
+footer {
+  border-top: 2px solid var(--accent2-color);
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+}
+
+/* 14. Social Media Icons */
+footer .socialmedia img {
+  width: 32px;
+  height: 32px;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
