@@ -1,10 +1,4 @@
-/* =============================
-   Rafting Site Stylesheet
-   File: rafting.css
-   ============================= */
-
-/* 1. Define CSS Variables */
-:root {
+ :root {
   --primary-color: #1C4919;
   --secondary-color: #369FA2;
   --accent1-color: #967D3E;
@@ -14,67 +8,58 @@
   --body-font: 'Open Sans', sans-serif;
 }
 
-/* 2. Reset All Elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 3. Body Styling */
-body {
+body
+ {
   font-family: var(--body-font);
   color: var(--accent1-color);
 }
 
-/* 4. Page Layout */
-header, main, footer {
+header, main, footer 
+{
   width: 840px;
   margin: 0 auto;
 }
 
-/* 5. Navigation Bar */
-nav {
+nav 
+{
   background-color: var(--secondary-color);
   padding: 1rem;
 }
 
-/* 6. Navigation Links */
-nav a {
+nav a 
+{
   color: var(--accent2-color);
   display: inline-block;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
+  padding: 0.5rem;
 }
 
-/* 7. Headings */
-h1 {
-  font-family: var(--heading-font);
+h1 
+{
   color: var(--primary-color);
 }
 
-h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-/* 8. Images */
-img {
+img 
+{
   width: 100%;
   height: auto;
-  border: 2px solid var(--accent2-color);
+  border: 1px solid var(--accent2-color);
   padding: 4px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* 9. Main Styling */
-main {
-  max-width: 840px;
-  margin: 0 auto;
+main 
+{
+max-width: 840px;
 }
 
-/* 10. Aside Styling */
-aside {
+aside 
+{
   width: 300px;
   margin: 1rem;
   padding: 1rem;
@@ -83,28 +68,25 @@ aside {
   color: var(--primary-color);
 }
 
-/* 11. Aside Image Styling */
-aside img {
+aside img 
+{
   width: 200px;
   height: auto;
 }
 
-/* 12. Paragraphs */
-p {
+p 
+{
   padding: 0;
 }
 
-/* 13. Footer */
-footer {
+footer
+{
   margin-top: 2rem;
-  border-top: 2px solid var(--accent1-color);
+  border-top: 2px solid var(--primary-color);
   text-align: center;
-  padding: 1rem;
-  background-color: var(--primary-color);
-  color: var(--accent2-color);
 }
+.socialmedia a 
 
-/* 14. Social Media Link Styling */
-.socialmedia a {
+{
   text-decoration: none;
 }
