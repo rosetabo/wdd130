@@ -5,16 +5,16 @@
 
 /* 1. Define CSS Variables */
 :root {
-  --primary-color: #1C4919;         /* Dark green */
-  --secondary-color: #369FA2;       /* Teal blue */
-  --accent1-color: #967D3E;         /* Mustard/gold */
-  --accent2-color: #CBB3B3;         /* Light beige-pink */
+  --primary-color: #1C4919;
+  --secondary-color: #369FA2;
+  --accent1-color: #967D3E;
+  --accent2-color: #CBB3B3;
 
   --heading-font: 'Roboto Slab', serif;
   --body-font: 'Open Sans', sans-serif;
 }
 
-/* 2. CSS Reset - Box Model */
+/* 2. Reset All Elements */
 * {
   margin: 0;
   padding: 0;
@@ -27,31 +27,84 @@ body {
   color: var(--accent1-color);
 }
 
-/* 4. Page Layout - Centering and Width */
+/* 4. Page Layout */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-/* 5. Headings */
-h1, h2 {
+/* 5. Navigation Bar */
+nav {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+
+/* 6. Navigation Links */
+nav a {
+  color: var(--accent2-color);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+/* 7. Headings */
+h1 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-/* 6. Spacing for Key Elements */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-/* 7. Header Styling Example */
-header {
+/* 8. Images */
+img {
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--accent2-color);
+  padding: 4px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 9. Main Styling */
+main {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+/* 10. Aside Styling */
+aside {
+  width: 300px;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid var(--accent1-color);
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+}
+
+/* 11. Aside Image Styling */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* 12. Paragraphs */
+p {
+  padding: 0;
+}
+
+/* 13. Footer */
+footer {
+  margin-top: 2rem;
+  border-top: 2px solid var(--accent1-color);
+  text-align: center;
+  padding: 1rem;
   background-color: var(--primary-color);
   color: var(--accent2-color);
 }
 
-/* 8. Remove Underlines from Social Media Image Links */
+/* 14. Social Media Link Styling */
 .socialmedia a {
   text-decoration: none;
 }
