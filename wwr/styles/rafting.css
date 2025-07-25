@@ -8,6 +8,11 @@
   --body-font: 'Open Sans', sans-serif;
 }
 
+header {
+  background-color: white;
+  color: var(--accent2-color);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,67 +31,42 @@ header, main, footer
   margin: 0 auto;
 }
 
-nav 
-{
-  background-color: var(--secondary-color);
-  padding: 1rem;
-}
-
-nav a 
-{
-  color: var(--accent2-color);
-  display: inline-block;
-  padding: 0.5rem;
-}
-
-h1 
-{
+h1, h2 {
+  font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
-img 
-{
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display:block;
   width: 100%;
   height: auto;
-  border: 1px solid var(--accent2-color);
-  padding: 4px;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-main 
-{
-max-width: 840px;
-}
-
-aside 
-{
-  width: 300px;
-  margin: 1rem;
-  padding: 1rem;
-  border: 2px solid var(--accent1-color);
-  background-color: var(--accent2-color);
-  color: var(--primary-color);
-}
-
-aside img 
-{
-  width: 200px;
-  height: auto;
-}
-
-p 
-{
-  padding: 0;
-}
-
-footer
-{
-  margin-top: 2rem;
-  border-top: 2px solid var(--primary-color);
+.hero h1 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 16px;
   text-align: center;
+  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white
 }
-.socialmedia a 
 
-{
-  text-decoration: none;
+.hero article img {
+  float: right;
+  width: 125px;
 }
