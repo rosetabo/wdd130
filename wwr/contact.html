@@ -79,17 +79,31 @@
 
       <fieldset>
         <legend>Purpose of the Message:</legend>
-        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
-      </fieldset>
+      <label for="purpose-general">
+      <input type="radio" id="purpose-general" name="purpose" value="general" required>
+      General Inquiry
+    </label><br>
 
-      <label for="message">Your Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+    <label for="purpose-reservation">
+      <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+      Reservation Question
+    </label><br>
 
-      <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+    <label for="purpose-suggestion">
+      <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+      Website Suggestion
+    </label>
+  </fieldset>
 
-      <button type="submit" aria-label="Send your message to our team">Send Message</button>
+  <label for="message">Your Message:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <label for="subscribe">
+    <input type="checkbox" id="subscribe" name="subscribe">
+    Please subscribe me to the monthly newsletter
+  </label>
+
+  <button type="submit" aria-label="Send your message to our team">Send Message</button>
     </form>
   </section>
 
