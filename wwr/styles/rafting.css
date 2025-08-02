@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: var(--body-font);
+  font-family: 'Roboto Slab', serif;
   color: var(--accent1-color);
   background-color: #fff;
 }
