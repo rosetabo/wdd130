@@ -1,111 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700;900&display=swap');
+
 :root {
-  --primary-color: #1C4919; 
-  --secondary-color: #369FA2;
-  --accent1-color: #FFB703; 
-  --accent2-color: #FB8500; 
-  --light-color: #ffffff; 
-  --dark-color: #111111; 
+    --primary-color: #1C4919;
+    --secondary-color: #369FA2;
+    --accent1-color: #FFD166;
+    --accent2-color: #073B4C;
+    --text-color: #333;
+    --background-color: #fff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
+/* General Styles */
 body {
-  font-family: "Roboto Slab", serif;
-  background-color: var(--light-color);
-  color: var(--dark-color);
-  line-height: 1.6;
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* HEADER LAYOUT */
 header {
-  background-color: var(--primary-color);
-  color: var(--light-color);
-  padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* logo | title | nav */
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
 }
 
-nav a {
-  color: var(--light-color);
-  text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
+header img {
+    height: 60px;
 }
 
-nav a:hover {
-  color: var(--accent1-color);
+header h1 {
+    font-size: 1.8rem;
+    margin-left: 1rem;
 }
 
-.hero {
-  position: relative;
-  background: url('../images/hero.jpg') center/cover no-repeat;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+/* NAVIGATION */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.55);
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
-.hero h1,
-.hero p {
-  position: relative;
-  color: var(--light-color);
-  z-index: 1;
+nav ul li a:hover {
+    color: var(--accent1-color);
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+/* HISTORY SECTION */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
 }
 
-.hero p {
-  font-size: 1.25rem;
-  margin-top: 0.5rem;
+/* ADVENTURES SECTION */
+.adventures {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2rem;
+    flex-wrap: wrap;
 }
 
-.hero button {
-  margin-top: 1.5rem;
-  background: var(--accent1-color);
-  color: var(--dark-color);
-  padding: 0.75rem 1.5rem;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-  font-weight: bold;
+.adventures figure {
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
 }
 
-.hero button:hover {
-  background: var(--accent2-color);
-  color: var(--light-color);
+.adventures img {
+    border-radius: 8px;
 }
 
+.adventures figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* FOOTER */
 footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: var(--primary-color);
-  color: var(--light-color);
-  text-align: center;
-  border-top: 2px solid var(--accent1-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    border-top: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
-footer a {
-  color: var(--accent1-color);
+footer .socialmedia {
+    display: flex;
+    gap: 1rem;
 }
 
-footer a:hover {
-  color: var(--accent2-color);
+footer .socialmedia a img {
+    width: 30px;
+    height: 30px;
 }
