@@ -3,104 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Whitewater Adventures - Contact Us</title>
-  <meta name="description" content="Contact Whitewater Adventures for questions, bookings, and feedback. Get in touch with us through our contact form or our listed information.">
+  <title>About Us - Whitewater Adventures</title>
+  <meta name="description" content="Learn about Whitewater Adventures, our history, mission, and the amazing team that makes your rafting experience unforgettable.">
   <meta name="author" content="Rose Tabo Robin">
-
-  <!-- Google Fonts preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Roboto Slab font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700;900&display=swap" rel="stylesheet">
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="styles/rafting.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="rafting.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <img src="images/logo.jpg" alt="Whitewater Rafting Logo"/>
-    <h1>Whitewater Adventures</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container header-container">
+      <img src="images/logo.jpg" alt="Whitewater Adventures Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Main Content -->
   <main>
-
-    <!-- Hero Section -->
-    <div class="hero">
-  <h1>Whitewater Adventures</h1>
-  <article>
-    <img src="images/happy-client.jpg" alt="Happy client rafting" />
-    <p>
-      Our mission is to create unforgettable moments on the river — guiding you through adventure, challenge, and fun. Whether you're a first-timer or seasoned rafter, you're family here. 🌊💪
-    </p>
-  </article>
-</div>
-
-    <!-- History Section -->
-    <section class="history">
-      <h2>History</h2>
-      <p>
-        Founded in the mists of ancient river legend, our company rose from foam and spray to become a beacon of thrill.
-      </p>
-      <img src="images/rafting3.jpg" alt="Historical rafting image" />
-      <p>
-        From humble beginnings with just a raft and a dream, we now navigate some of the wildest waters in the world.
-      </p>
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/about-hero.jpg');">
+      <div class="hero-content">
+        <h1>About Whitewater Adventures</h1>
+        <p>Discover our passion for adventure and commitment to your safety and enjoyment</p>
+      </div>
     </section>
 
-    <!-- Adventure Gallery -->
-    <section class="adventure">
-      <h2>Adventure Awaits You!</h2>
+    <section class="history container">
+      <h2 class="section-title">Our History</h2>
+      <div class="history-content">
+        <div>
+          <p>Founded in 2005 by river enthusiasts Mark and Sarah Johnson, Whitewater Adventures began with a single raft and a dream to share the thrill of river running with others. What started as weekend excursions for friends quickly grew into a full-fledged adventure company.</p>
+          <p>Our first commercial trip had just 6 participants, but word spread quickly about the incredible experiences we provided. By 2010, we were operating on three different rivers with a fleet of 12 rafts.</p>
+        </div>
+        <img src="images/rafting-history.jpg" alt="Historical rafting image">
+      </div>
+      <div class="history-content" style="margin-top: 40px;">
+        <img src="images/rafting-team.jpg" alt="Our team today">
+        <div>
+          <p>Today, we're proud to be one of the most respected rafting companies in the region, with over 50 trained guides and safety personnel. We've introduced thousands of people to the joy of whitewater rafting while maintaining an impeccable safety record.</p>
+          <p>We continue to innovate with new trip offerings and maintain our commitment to environmental stewardship of the rivers we love.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="adventure container">
+      <h2 class="section-title">Adventure Awaits You!</h2>
       <div class="gallery">
         <figure>
-          <img src="images/rafting1.jpg" alt="Los Dientes del Diablo" />
+          <img src="images/rafting1.jpg" alt="Los Dientes del Diablo">
           <figcaption>Los Dientes del Diablo</figcaption>
         </figure>
         <figure>
-          <img src="images/rafting2.jpg" alt="Big Mallard" />
+          <img src="images/rafting2.jpg" alt="Big Mallard">
           <figcaption>Big Mallard</figcaption>
         </figure>
         <figure>
-          <img src="images/rafting3.jpg" alt="Half Day Adventure" />
+          <img src="images/rafting3.jpg" alt="Half Day Adventure">
           <figcaption>Half Day Adventure</figcaption>
         </figure>
         <figure>
-          <img src="images/rafting4.jpg" alt="The Gauley River" />
+          <img src="images/rafting4.jpg" alt="The Gauley River">
           <figcaption>The Gauley River</figcaption>
         </figure>
         <figure>
-          <img src="images/rafting5.jpg" alt="Rapid Thunder" />
+          <img src="images/rafting5.jpg" alt="Rapid Thunder">
           <figcaption>Rapid Thunder</figcaption>
         </figure>
       </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Whitewater Adventures | Designed by Rose Tabo</p>
-    <nav class="socialmedia">
-      <a href="https://facebook.com" target="_blank">
-        <img src="images/facebook-icon.png" alt="Facebook" width="32" height="32"/>
-      </a>
-      <a href="https://twitter.com" target="_blank">
-        <img src="images/twitter-icon.png" alt="Twitter" width="32" height="32"/>
-      </a>
-      <a href="https://instagram.com" target="_blank">
-        <img src="images/instagram-icon.png" alt="Instagram" width="32" height="32"/>
-      </a>
-    </nav>
-  </footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <img src="images/logo-white.png" alt="Whitewater Adventures Logo" class="footer-logo">
+        <p>Whitewater Adventures offers thrilling rafting experiences for all skill levels. Our expert guides ensure your safety while you enjoy the adventure of a lifetime.</p>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
 
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html">Our Trips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="safety.html">Safety Information</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 River Road, Nairobi, Kenya</p>
+        <p><i class="fas fa-phone-alt"></i> +254 729 999 174</p>
+        <p><i class="fas fa-envelope"></i> info@whitewateradventures.com</p>
+        <p><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 6:00 PM</p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2025 Whitewater Adventures. All Rights Reserved. | Designed by Rose Tabo Robin</p>
+    </div>
+  </footer>
 </body>
 </html>

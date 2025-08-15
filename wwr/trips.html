@@ -3,103 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Whitewater Adventures - Contact Us</title>
-  <meta name="description" content="Contact Whitewater Adventures for questions, bookings, and feedback. Get in touch with us through our contact form or our listed information.">
+  <title>Rafting Trips - Whitewater Adventures</title>
+  <meta name="description" content="Explore our exciting whitewater rafting trips for all skill levels. From gentle floats to extreme rapids, we have the perfect adventure for you.">
   <meta name="author" content="Rose Tabo Robin">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles/rafting.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="rafting.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="White Water Rafting Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html" class="active">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="container header-container">
+      <img src="images/logo.jpg" alt="Whitewater Adventures Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html" class="active">Trips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
+  <main>
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/trips-hero.jpg');">
+      <div class="hero-content">
+        <h1>Our Exciting Rafting Trips</h1>
+        <p>Choose your adventure level and create unforgettable memories on the water</p>
+      </div>
+    </section>
 
-        <section class="cta">
-            <h1>Ready for Your Next Adventure?</h1>
-            <p>Book your unforgettable rafting trip today! We have packages for beginners, thrill seekers, and everyone in between.</p>
-            <a href="contact.html" class="btn">Contact Us to Book</a>
-        </section>
+    <section class="cta container">
+      <h2 class="section-title">Ready for Your Next Adventure?</h2>
+      <p>Book your unforgettable rafting trip today! We have packages for beginners, thrill seekers, and everyone in between.</p>
+      <a href="contact.html" class="btn">Contact Us to Book</a>
+    </section>
 
-        <!-- Trip Descriptions -->
-        <section class="trip-list">
-            <article>
-                <img src="images/trip1.jpg" alt="Gentle Rapids Adventure">
-                <h2>Gentle Rapids Adventure</h2>
-                <p>Perfect for families and first-timers, enjoy a calm but exciting ride through scenic landscapes. Half-day trip with a picnic lunch included.</p>
-            </article>
-
-            <article>
-                <img src="images/trip2.jpg" alt="Intermediate Thrill Run">
-                <h2>Intermediate Thrill Run</h2>
-                <p>Take on bigger waves and faster currents! This trip is great for those looking for more excitement while still feeling safe.</p>
-            </article>
-
-            <article>
-                <img src="images/trip3.jpg" alt="Extreme White Water Challenge">
-                <h2>Extreme White Water Challenge</h2>
-                <p>For experienced rafters only! This trip offers adrenaline-pumping rapids and non-stop action from start to finish.</p>
-            </article>
-        </section>
-
-        <!-- Trips Table -->
-        <section class="trip-table">
-            <h2>Available Trips & Pricing</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Trip Name</th>
-                        <th>Duration</th>
-                        <th>Difficulty</th>
-                        <th>Price (per person)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Gentle Rapids Adventure</td>
-                        <td>4 Hours</td>
-                        <td>Easy</td>
-                        <td>$50</td>
-                    </tr>
-                    <tr>
-                        <td>Intermediate Thrill Run</td>
-                        <td>6 Hours</td>
-                        <td>Medium</td>
-                        <td>$90</td>
-                    </tr>
-                    <tr>
-                        <td>Extreme White Water Challenge</td>
-                        <td>Full Day</td>
-                        <td>Hard</td>
-                        <td>$150</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 White Water Rafting | Designed by Rose Tabo</p>
-        <p><a href="images/trips wireframe.png" target="_blank">View Trips Page Wireframe</a></p>
-        <div class="socialmedia">
-            <a href="#"><img src="images/facebook.icon.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.icon.png" alt="Twitter"></a>
-            <a href="#"><img src="images/instagram.icon (1).png" alt="Instagram"></a>
+    <section class="trip-list container">
+      <article>
+        <img src="images/trip1.jpg" alt="Gentle Rapids Adventure">
+        <div class="trip-content">
+          <h2>Gentle Rapids Adventure</h2>
+          <p>Perfect for families and first-timers, enjoy a calm but exciting ride through scenic landscapes. Half-day trip with a picnic lunch included. Our most popular trip for those new to rafting.</p>
+          <ul>
+            <li>Duration: 4 hours</li>
+            <li>Difficulty: Easy</li>
+            <li>Minimum age: 8 years</li>
+            <li>Price: $50 per person</li>
+          </ul>
+          <a href="contact.html" class="btn">Book Now</a>
         </div>
-    </footer>
+      </article>
+      <article>
+        <img src="images/trip2.jpg" alt="Intermediate Thrill Run">
+        <div class="trip-content">
+          <h2>Intermediate Thrill Run</h2>
+          <p>Take on bigger waves and faster currents! This trip is great for those looking for more excitement while still feeling safe. Includes class III rapids and a riverside lunch.</p>
+          <ul>
+            <li>Duration: 6 hours</li>
+            <li>Difficulty: Medium</li>
+            <li>Minimum age: 12 years</li>
+            <li>Price: $90 per person</li>
+          </ul>
+          <a href="contact.html" class="btn">Book Now</a>
+        </div>
+      </article>
+      <article>
+        <img src="images/trip3.jpg" alt="Extreme White Water Challenge">
+        <div class="trip-content">
+          <h2>Extreme White Water Challenge</h2>
+          <p>For experienced rafters only! This trip offers adrenaline-pumping rapids and non-stop action from start to finish. Tackle class IV-V rapids with our most experienced guides.</p>
+          <ul>
+            <li>Duration: Full day</li>
+            <li>Difficulty: Hard</li>
+            <li>Minimum age: 18 years</li>
+            <li>Price: $150 per person</li>
+          </ul>
+          <a href="contact.html" class="btn">Book Now</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="trip-table container">
+      <h2 class="section-title">Trip Comparison</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Trip Name</th>
+              <th>Duration</th>
+              <th>Difficulty</th>
+              <th>Age Requirement</th>
+              <th>Price (per person)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Gentle Rapids Adventure</td>
+              <td>4 Hours</td>
+              <td>Easy</td>
+              <td>8+ years</td>
+              <td>$50</td>
+            </tr>
+            <tr>
+              <td>Intermediate Thrill Run</td>
+              <td>6 Hours</td>
+              <td>Medium</td>
+              <td>12+ years</td>
+              <td>$90</td>
+            </tr>
+            <tr>
+              <td>Extreme White Water Challenge</td>
+              <td>Full Day</td>
+              <td>Hard</td>
+              <td>18+ years</td>
+              <td>$150</td>
+            </tr>
+            <tr>
+              <td>Family Float Package</td>
+              <td>3 Hours</td>
+              <td>Very Easy</td>
+              <td>5+ years</td>
+              <td>$35</td>
+            </tr>
+            <tr>
+              <td>Multi-Day Expedition</td>
+              <td>3 Days</td>
+              <td>Medium-Hard</td>
+              <td>16+ years</td>
+              <td>$450</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <img src="images/logo-white.png" alt="Whitewater Adventures Logo" class="footer-logo">
+        <p>Whitewater Adventures offers thrilling rafting experiences for all skill levels. Our expert guides ensure your safety while you enjoy the adventure of a lifetime.</p>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html">Our Trips</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="safety.html">Safety Information</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 River Road, Nairobi, Kenya</p>
+        <p><i class="fas fa-phone-alt"></i> +254 729 999 174</p>
+        <p><i class="fas fa-envelope"></i> info@whitewateradventures.com</p>
+        <p><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 6:00 PM</p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2025 Whitewater Adventures. All Rights Reserved. | Designed by Rose Tabo Robin</p>
+    </div>
+  </footer>
 </body>
 </html>
